@@ -35,7 +35,7 @@ Vestibulum sem est, congue id rutrum eu, ultricies et nisl. Sed vel tortor eget 
 ```
 !pip install spotipy
 ```
-Vestibulum sem est, congue id rutrum eu, ultricies et nisl. Sed vel tortor eget est lacinia tincidunt et nec odio. Sed egestas ligula a nulla malesuada, at egestas erat commodo. Integer eu augue a nibh iaculis lobortis accumsan non erat. Ut semper in enim sed fringilla. Sed dapibus posuere sapien dictum bibendum. Etiam vulputate urna ullamcorper quam tincidunt, at cursus tellus tristique. In vehicula quam eget velit condimentum gravida. 
+Es una librería para la API Web de Spotify, con esta se obtiene acceso a todos los datos en la plataforma.
 
 <a name="exploratorio"></a>
 ## Análisis exploratorio de datos
