@@ -1,7 +1,7 @@
 # Spotipy BEDUne Right
 ## Equipo 6
 *Análisis de los datos de Spotify, gráficas bonitas incluidas.* 
-
+<img src = 'BeduEquipo6.png'>
 ## Índice
 - [Introducción](#introduccion) 
 - [¿API?](#api) 
