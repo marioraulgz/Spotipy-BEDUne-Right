@@ -98,7 +98,7 @@ Spotipy-BEDUne-Right/Postworks/Postwork_5_Módulo_6.ipynb
 ```
 Según [redhat](https://www.redhat.com/es/topics/api/what-are-application-programming-interfaces) : Una API es un conjunto de definiciones y protocolos que se utiliza para desarrollar e integrar el software de las aplicaciones. API significa interfaz de programación de aplicaciones.
 
-Z En esta sección del proyecto detallamos de forma puntual la extracción de datos desdde la API de Spotify (...) No podemos trabajar directamente con los datos en crudo, por lo que también abordaremos la limpieza e integración del dataset. Con el fin de comprobar que los datos están listos para la etapa de input, crearemos un "perfil de gustos" con los datos obtenidos en la parte final.
+> En esta sección del proyecto detallamos de forma puntual la extracción de datos desde la API de Spotify (...) No podemos trabajar directamente con los datos en crudo, por lo que también abordaremos la limpieza e integración del dataset. Con el fin de comprobar que los datos están listos para la etapa de input, crearemos un "perfil de gustos" con los datos obtenidos en la parte final.
 
 <a name="spotipy"></a>
 ### Spotipy al rescate
