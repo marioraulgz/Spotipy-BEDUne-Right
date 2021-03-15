@@ -29,7 +29,7 @@ Este paso corresponde a
 ```
 Spotipy-BEDUne-Right/Postworks/Postwork_5_Módulo_1.ipynb 
 ```
-¿De qué forma puede Spotify diferenciarse de su competencia siguiendo una estrategia basada en datos? En la actualidad, se estima que casi el 90% de los datos existentes en internet fueron creados en los últimos años, y de estos, gran parte permanecen sin ser analizados. se ha llegado a un punto tal que, los datos han sido catalogados como el petróleo del siglo XXI, resaltando las oportunidades que pueden obtenerse de su exploración. Para este proyecto, continuaremos centrándonos en la industria de streaming de música como se hizo en el módulo anterior, más específicamente, en Spotify, una de las empresas más resilientes ante la entrada de nuevos competidores y que, ante este panorama competitivo, se ha visto forzada a buscar nuevas formas de mantenerse en la punta de los ingresos generados en el sector.
+> ¿De qué forma puede Spotify diferenciarse de su competencia siguiendo una estrategia basada en datos? En la actualidad, se estima que casi el 90% de los datos existentes en internet fueron creados en los últimos años, y de estos, gran parte permanecen sin ser analizados. se ha llegado a un punto tal que, los datos han sido catalogados como el petróleo del siglo XXI, resaltando las oportunidades que pueden obtenerse de su exploración. Para este proyecto, continuaremos centrándonos en la industria de streaming de música como se hizo en el módulo anterior, más específicamente, en Spotify, una de las empresas más resilientes ante la entrada de nuevos competidores y que, ante este panorama competitivo, se ha visto forzada a buscar nuevas formas de mantenerse en la punta de los ingresos generados en el sector.
 
 
 <a name="preguntas"></a>
@@ -38,7 +38,7 @@ Este paso corresponde a
 ```
 Spotipy-BEDUne-Right/Postworks/Postwork_5_Módulo_2.ipynb 
 ```
-Una vez que hemos identificado el problema y decidido que la mejor estrategia de diferenciación para Spotify sería la de integrar los datos generados por sus usarios y utlizarlos dentro de sus algoritmos de recomendación, podemos comenzar a plantear preguntas relacionadas no solamente a las posibles fuentes e información necesaria en el dataset, sino a la misma estructura del algortimo (el algoritmo escapa de los límites del módulo, pero tenerlo en mente nos sirve para tener clara la información útil de la que no lo es en el proceso de recopilación y limpieza).
+> Una vez que hemos identificado el problema y decidido que la mejor estrategia de diferenciación para Spotify sería la de integrar los datos generados por sus usarios y utlizarlos dentro de sus algoritmos de recomendación, podemos comenzar a plantear preguntas relacionadas no solamente a las posibles fuentes e información necesaria en el dataset, sino a la misma estructura del algortimo (el algoritmo escapa de los límites del módulo, pero tenerlo en mente nos sirve para tener clara la información útil de la que no lo es en el proceso de recopilación y limpieza).
 
 Algunas otras preguntas que surgen, pero que no necesariamente vienen en la misma línea de pensamiento que la que planteamos surgen y serán abordadas en la sección extra.
 
@@ -57,7 +57,7 @@ Este paso corresponde a
 ```
 Spotipy-BEDUne-Right/Postworks/Postwork_5_Módulo_3.ipynb 
 ```
-Hemos llegado a la sección de recopilación de datos, es importante mencionar que, investigando sobre posibles inputs para la creación de un algoritmo sencillo de recomendación, encontramos datasets que requieren de las características de las canciones escuchadas, es por ello que elegimos aquellos datasets que contienen esta información. En etapas posteriores del proyecto preferimos utilizar los datos extraídos directamente desde la API, pero para cumplir con lo establecido en este postwork, nos referimos a los sets que encontramos en Kaggle.
+> Hemos llegado a la sección de recopilación de datos, es importante mencionar que, investigando sobre posibles inputs para la creación de un algoritmo sencillo de recomendación, encontramos datasets que requieren de las características de las canciones escuchadas, es por ello que elegimos aquellos datasets que contienen esta información. En etapas posteriores del proyecto preferimos utilizar los datos extraídos directamente desde la API, pero para cumplir con lo establecido en este postwork, nos referimos a los sets que encontramos en Kaggle.
 
 Veremos tambien la posiblidad de obtener los datos directamente desde Spotify.
 
@@ -98,7 +98,7 @@ Spotipy-BEDUne-Right/Postworks/Postwork_5_Módulo_6.ipynb
 ```
 Según [redhat](https://www.redhat.com/es/topics/api/what-are-application-programming-interfaces) : Una API es un conjunto de definiciones y protocolos que se utiliza para desarrollar e integrar el software de las aplicaciones. API significa interfaz de programación de aplicaciones.
 
-En esta sección del proyecto detallamos de forma puntual la extracción de datos desdde la API de Spotify (...) No podemos trabajar directamente con los datos en crudo, por lo que también abordaremos la limpieza e integración del dataset. Con el fin de comprobar que los datos están listos para la etapa de input, crearemos un "perfil de gustos" con los datos obtenidos en la parte final.
+Z En esta sección del proyecto detallamos de forma puntual la extracción de datos desdde la API de Spotify (...) No podemos trabajar directamente con los datos en crudo, por lo que también abordaremos la limpieza e integración del dataset. Con el fin de comprobar que los datos están listos para la etapa de input, crearemos un "perfil de gustos" con los datos obtenidos en la parte final.
 
 <a name="spotipy"></a>
 ### Spotipy al rescate
@@ -111,7 +111,7 @@ Para poder simplificarnos el proceso de las solicitudes GET a la API de Spotify,
 ## Extra: La música y el mundo, o **un mapa vale más que mil palabras**
 Este paso extra esta alojado en la siguiente [liga](https://colab.research.google.com/drive/1YMSnIwXacq0136SFCc_3Wt1jWYubMSqu#scrollTo=2o3a8scm7keb)
 
-Ante la posiblidad de tener información o mejor dicho, de tener respuestas respecto al tipo de música que escuchamos y como se clasifican aquellas canciones en una playlist gracias al API de Spotify, es natural extender el alcance de estas respuestas y plantearnos preguntas acerca del mundo en el que coexistimos (...)
+> Ante la posiblidad de tener información o mejor dicho, de tener respuestas respecto al tipo de música que escuchamos y como se clasifican aquellas canciones en una playlist gracias al API de Spotify, es natural extender el alcance de estas respuestas y plantearnos preguntas acerca del mundo en el que coexistimos (...)
 
 
 <a name="geopandas"></a>
@@ -130,8 +130,8 @@ Utilizaremos una librería para el análisis de datos geográficos y nos servir�
 
 ### Links
 Finalmente, algunos links que servirán al lector para ahondar mas en los temas tocados.
-[Spotify for Developers](https://developer.spotify.com/documentation/web-api/)
-[Spotipy](https://spotipy.readthedocs.io/en/2.17.1/)
-[geopandas](https://geopandas.org/)
+- [Spotify for Developers](https://developer.spotify.com/documentation/web-api/)
+- [Spotipy](https://spotipy.readthedocs.io/en/2.17.1/)
+- [geopandas](https://geopandas.org/)
 
 
