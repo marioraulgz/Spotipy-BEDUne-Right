@@ -6,112 +6,132 @@
 - [Introducción](#introduccion)
 - [Identificación del problema](#identificacion)
 - [Planteamiento de preguntas](#preguntas)
-  * [Pregunta 1](#pregunta1)
-  * [Pregunta 2](#pregunta2)
-  * [¿Diferencia de gustos es cuestión de geografía?](#geografia)
-    + [Geopandas y geoplot](#geopandas)
+  * [¿De qué forma puede Spotify diferenciarse de su competencia siguiendo una estrategia basada en datos? ](#pregunta1)
 - [Colección de datos](#coleccion)
 - [Análisis Exploratorio de Datos](#exploratorio)
-    * [Generación de variables auxiliares](#auxiliares)
-    * [Estadísticas descriptivas](#estadisticas)
 - [Limpieza de datos](#limpieza)  
 - [¿API?](#api)
    * [Spotipy al rescate](#spotipy)
-- [Challenges](#challenges)
 - [Links](#links)
-
+- [Extra: La música y el mundo, o **un mapa vale más que mil palabras**](#geografia)
+  * [Geopandas](#geopandas)
 <a name="introduccion"></a>
 ## Introducción
+En este proyecto pongámonos en los zapatos de unos científicos de datos en Spotify, graduados de BEDU y que pasaron exitosamente a la fase de Machine Learning.
+
 Divideremos cada uno de los pasos para la elaboración del proyecto en secciones, a cada sección le corresponderá su Notebook.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus lectus non metus mollis, vulputate ultricies ex rutrum. Suspendisse commodo, odio id scelerisque scelerisque, ligula quam maximus lacus, a tincidunt quam quam et ipsum. Phasellus sit amet auctor nulla, a accumsan quam. Nullam a ipsum nunc. Donec viverra ut erat non efficitur. Etiam a ipsum bibendum metus vestibulum congue. Curabitur interdum elit orci, quis laoreet nunc rutrum lacinia. Ut id lobortis lacus, nec condimentum lectus.
-
-Nam sit amet lectus non eros tincidunt molestie non at est. Vestibulum pretium tempus nulla nec sodales. Mauris sagittis consectetur auctor. Ut in est volutpat, pulvinar risus eu, congue tortor. Sed nec sem magna. Etiam quis ligula erat. Mauris ultrices metus non augue feugiat mollis. Duis commodo a risus a pretium. Donec tristique risus placerat lacus laoreet, eu laoreet orci tincidunt. Vestibulum sodales, ligula sed aliquet pretium, justo lorem lobortis sem, at tristique eros sem a neque. Quisque sodales nec dolor non facilisis. Phasellus ac ante vitae risus tempus consectetur. Sed commodo nunc non auctor pulvinar. 
+Al tratarse de un README, no trataremos los temas a profundidad, sino que daremos una breve introducción que podrá consistir de fragmentos del contenido de los Notebooks (ubicados en Spotipy-BEDUne-Right/Postworks)
 
 <a name="identificacion"></a>
 ## Identificación del problema
-Divideremos cada uno de los pasos para la elaboración del proyecto en secciones, a cada sección le corresponderá su Notebook.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus lectus non metus mollis, vulputate ultricies ex rutrum. Suspendisse commodo, odio id scelerisque scelerisque, ligula quam maximus lacus, a tincidunt quam quam et ipsum. Phasellus sit amet auctor nulla, a accumsan quam. Nullam a ipsum nunc. Donec viverra ut erat non efficitur. Etiam a ipsum bibendum metus vestibulum congue. Curabitur interdum elit orci, quis laoreet nunc rutrum lacinia. Ut id lobortis lacus, nec condimentum lectus.
+Este paso corresponde a
+```
+Spotipy-BEDUne-Right/Postworks/Postwork_5_Módulo_1.ipynb 
+```
+¿De qué forma puede Spotify diferenciarse de su competencia siguiendo una estrategia basada en datos? En la actualidad, se estima que casi el 90% de los datos existentes en internet fueron creados en los últimos años, y de estos, gran parte permanecen sin ser analizados. se ha llegado a un punto tal que, los datos han sido catalogados como el petróleo del siglo XXI, resaltando las oportunidades que pueden obtenerse de su exploración. Para este proyecto, continuaremos centrándonos en la industria de streaming de música como se hizo en el módulo anterior, más específicamente, en Spotify, una de las empresas más resilientes ante la entrada de nuevos competidores y que, ante este panorama competitivo, se ha visto forzada a buscar nuevas formas de mantenerse en la punta de los ingresos generados en el sector.
 
-Nam sit amet lectus non eros tincidunt molestie non at est. Vestibulum pretium tempus nulla nec sodales. Mauris sagittis consectetur auctor. Ut in est volutpat, pulvinar risus eu, congue tortor. Sed nec sem magna. Etiam quis ligula erat. Mauris ultrices metus non augue feugiat mollis. Duis commodo a risus a pretium. Donec tristique risus placerat lacus laoreet, eu laoreet orci tincidunt. Vestibulum sodales, ligula sed aliquet pretium, justo lorem lobortis sem, at tristique eros sem a neque. Quisque sodales nec dolor non facilisis. Phasellus ac ante vitae risus tempus consectetur. Sed commodo nunc non auctor pulvinar. 
 
 <a name="preguntas"></a>
 ## Planteamiento de preguntas
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus lectus non metus mollis, vulputate ultricies ex rutrum. Suspendisse commodo, odio id scelerisque scelerisque, ligula quam maximus lacus, a tincidunt quam quam et ipsum. Phasellus sit amet auctor nulla, a accumsan quam. Nullam a ipsum nunc. Donec viverra ut erat non efficitur. Etiam a ipsum bibendum metus vestibulum congue. Curabitur interdum elit orci, quis laoreet nunc rutrum lacinia. Ut id lobortis lacus, nec condimentum lectus.
+Este paso corresponde a
+```
+Spotipy-BEDUne-Right/Postworks/Postwork_5_Módulo_2.ipynb 
+```
+Una vez que hemos identificado el problema y decidido que la mejor estrategia de diferenciación para Spotify sería la de integrar los datos generados por sus usarios y utlizarlos dentro de sus algoritmos de recomendación, podemos comenzar a plantear preguntas relacionadas no solamente a las posibles fuentes e información necesaria en el dataset, sino a la misma estructura del algortimo (el algoritmo escapa de los límites del módulo, pero tenerlo en mente nos sirve para tener clara la información útil de la que no lo es en el proceso de recopilación y limpieza).
 
-Nam sit amet lectus non eros tincidunt molestie non at est. Vestibulum pretium tempus nulla nec sodales. Mauris sagittis consectetur auctor. Ut in est volutpat, pulvinar risus eu, congue tortor. Sed nec sem magna. Etiam quis ligula erat. Mauris ultrices metus non augue feugiat mollis. Duis commodo a risus a pretium. Donec tristique risus placerat lacus laoreet, eu laoreet orci tincidunt. Vestibulum sodales, ligula sed aliquet pretium, justo lorem lobortis sem, at tristique eros sem a neque. Quisque sodales nec dolor non facilisis. Phasellus ac ante vitae risus tempus consectetur. Sed commodo nunc non auctor pulvinar. 
+Algunas otras preguntas que surgen, pero que no necesariamente vienen en la misma línea de pensamiento que la que planteamos surgen y serán abordadas en la sección extra.
+
 
 <a name="pregunta1"></a>
-### Pregunta 1
+### ¿De qué forma puede Spotify diferenciarse de su competencia siguiendo una estrategia basada en datos? 
 
-Praesent tincidunt, quam non condimentum consequat, neque est lobortis augue, semper pharetra mauris lorem vitae risus. Donec pretium mattis turpis, vitae gravida eros elementum vel. Integer interdum scelerisque ipsum. Aenean maximus fermentum imperdiet. Duis ornare libero sed erat venenatis posuere. Morbi ultricies dignissim ante, id dignissim dolor consectetur at. Quisque turpis felis, pulvinar et odio at, tempus ultricies orci. Curabitur aliquet aliquet rutrum. Vivamus finibus, urna at pellentesque fringilla, turpis diam accumsan odio, a facilisis nulla tellus vitae sapien. Proin tempor enim felis, vitae posuere ante lacinia ut. Cras egestas tellus dolor, eu pulvinar nisl sodales non. 
+Las preguntas que planteamos en el Notebook tienen este eje focal, puesto que buscamos no solo una solución que nos parezca factible, sino una que podamos comprobar y potenciar con la cantidad de datos que maneja Spotify.
 
-<a name="pregunta2"></a>
-### Pregunta 2
 
-Praesent tincidunt, quam non condimentum consequat, neque est lobortis augue, semper pharetra mauris lorem vitae risus. Donec pretium mattis turpis, vitae gravida eros elementum vel. Integer interdum scelerisque ipsum. Aenean maximus fermentum imperdiet. Duis ornare libero sed erat venenatis posuere. Morbi ultricies dignissim ante, id dignissim dolor consectetur at. Quisque turpis felis, pulvinar et odio at, tempus ultricies orci. Curabitur aliquet aliquet rutrum. Vivamus finibus, urna at pellentesque fringilla, turpis diam accumsan odio, a facilisis nulla tellus vitae sapien. Proin tempor enim felis, vitae posuere ante lacinia ut. Cras egestas tellus dolor, eu pulvinar nisl sodales non. 
-
-<a name="geografia"></a>
-### ¿Diferencia de gustos es cuestion de geografía?
-
-<a name="geopandas"></a>
-#### Geopandas y geoplot
-```
-!pip install geopandas
-!pip install geoplot
-!pip install shapely
-```
 
 <a name="coleccion"></a>
 ## Colección de datos
-Divideremos cada uno de los pasos para la elaboración del proyecto en secciones, a cada sección le corresponderá su Notebook.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus lectus non metus mollis, vulputate ultricies ex rutrum. Suspendisse commodo, odio id scelerisque scelerisque, ligula quam maximus lacus, a tincidunt quam quam et ipsum. Phasellus sit amet auctor nulla, a accumsan quam. Nullam a ipsum nunc. Donec viverra ut erat non efficitur. Etiam a ipsum bibendum metus vestibulum congue. Curabitur interdum elit orci, quis laoreet nunc rutrum lacinia. Ut id lobortis lacus, nec condimentum lectus.
+Este paso corresponde a
+```
+Spotipy-BEDUne-Right/Postworks/Postwork_5_Módulo_3.ipynb 
+```
+Hemos llegado a la sección de recopilación de datos, es importante mencionar que, investigando sobre posibles inputs para la creación de un algoritmo sencillo de recomendación, encontramos datasets que requieren de las características de las canciones escuchadas, es por ello que elegimos aquellos datasets que contienen esta información. En etapas posteriores del proyecto preferimos utilizar los datos extraídos directamente desde la API, pero para cumplir con lo establecido en este postwork, nos referimos a los sets que encontramos en Kaggle.
 
-Nam sit amet lectus non eros tincidunt molestie non at est. Vestibulum pretium tempus nulla nec sodales. Mauris sagittis consectetur auctor. Ut in est volutpat, pulvinar risus eu, congue tortor. Sed nec sem magna. Etiam quis ligula erat. Mauris ultrices metus non augue feugiat mollis. Duis commodo a risus a pretium. Donec tristique risus placerat lacus laoreet, eu laoreet orci tincidunt. Vestibulum sodales, ligula sed aliquet pretium, justo lorem lobortis sem, at tristique eros sem a neque. Quisque sodales nec dolor non facilisis. Phasellus ac ante vitae risus tempus consectetur. Sed commodo nunc non auctor pulvinar. 
-
+Veremos tambien la posiblidad de obtener los datos directamente desde Spotify.
 
 <a name="exploratorio"></a>
 ## Análisis exploratorio de datos
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus lectus non metus mollis, vulputate ultricies ex rutrum. Suspendisse commodo, odio id scelerisque scelerisque, ligula quam maximus lacus, a tincidunt quam quam et ipsum. Phasellus sit amet auctor nulla, a accumsan quam. Nullam a ipsum nunc. Donec viverra ut erat non efficitur. Etiam a ipsum bibendum metus vestibulum congue. Curabitur interdum elit orci, quis laoreet nunc rutrum lacinia. Ut id lobortis lacus, nec condimentum lectus.
+Este paso corresponde a
+```
+Spotipy-BEDUne-Right/Postworks/Postwork_5_Módulo_4.ipynb 
+```
+Aqui haremos uno de las partes cruciales de cualquier análisis de datos. La exploración. Por lo tanto, apoyados del poswork, nos enfocaremos en responder las siguientes preguntas.
 
-Nam sit amet lectus non eros tincidunt molestie non at est. Vestibulum pretium tempus nulla nec sodales. Mauris sagittis consectetur auctor. Ut in est volutpat, pulvinar risus eu, congue tortor. Sed nec sem magna. Etiam quis ligula erat. Mauris ultrices metus non augue feugiat mollis. Duis commodo a risus a pretium. Donec tristique risus placerat lacus laoreet, eu laoreet orci tincidunt. Vestibulum sodales, ligula sed aliquet pretium, justo lorem lobortis sem, at tristique eros sem a neque. Quisque sodales nec dolor non facilisis. Phasellus ac ante vitae risus tempus consectetur. Sed commodo nunc non auctor pulvinar. 
+-¿El conjunto de datos que tengo realmente me sirve para responder algunas de las preguntas que me planteé?
+-¿Qué tamaño tiene mi conjunto de datos? ¿Serán datos suficientes?
+-¿Qué columnas tengo y qué información tengo en cada una de esas columnas?
+-Los nombres que tienen mis columnas, ¿son el nombre más apropiado?
+-¿Qué tipos de datos tengo en cada columna? ¿Parecen ser el tipo correcto de datos? ¿O es un tipo de datos "incorrecto"?
+-Si selecciono algunas filas al azar y las observo, ¿estoy obteniendo los datos que debería? ¿o hay datos que parecen estar "sucios" o "incorrectos"?
+-Responde estas preguntas usando las técnicas que aprendiste en esta sesión y comparte tus hallazgos con tus compañeros y tu experto.
 
-
-<a name="auxiliares"></a>
-### Generación de variables auxiliares
-
-<a name="estadisticas"></a>
-### Estadísticas descriptivas
-
-Pellentesque vitae neque eget felis mattis rhoncus. In nec euismod nibh, quis bibendum augue. Pellentesque sit amet hendrerit ipsum. Donec lacus libero, malesuada sed dignissim ac, imperdiet eget justo. Fusce ut ligula vel sem imperdiet dapibus congue varius leo. Phasellus varius hendrerit iaculis. Duis condimentum volutpat diam, sed vestibulum mauris ornare et. Donec id pharetra nisi, ut porttitor ligula. 
 
 
 <a name="limpieza"></a>
 ## Limpieza de datos
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus lectus non metus mollis, vulputate ultricies ex rutrum. Suspendisse commodo, odio id scelerisque scelerisque, ligula quam maximus lacus, a tincidunt quam quam et ipsum. Phasellus sit amet auctor nulla, a accumsan quam. Nullam a ipsum nunc. Donec viverra ut erat non efficitur. Etiam a ipsum bibendum metus vestibulum congue. Curabitur interdum elit orci, quis laoreet nunc rutrum lacinia. Ut id lobortis lacus, nec condimentum lectus.
-
-Nam sit amet lectus non eros tincidunt molestie non at est. Vestibulum pretium tempus nulla nec sodales. Mauris sagittis consectetur auctor. Ut in est volutpat, pulvinar risus eu, congue tortor. Sed nec sem magna. Etiam quis ligula erat. Mauris ultrices metus non augue feugiat mollis. Duis commodo a risus a pretium. Donec tristique risus placerat lacus laoreet, eu laoreet orci tincidunt. Vestibulum sodales, ligula sed aliquet pretium, justo lorem lobortis sem, at tristique eros sem a neque. Quisque sodales nec dolor non facilisis. Phasellus ac ante vitae risus tempus consectetur. Sed commodo nunc non auctor pulvinar. 
+Este paso corresponde a
+```
+Spotipy-BEDUne-Right/Postworks/Postwork_5_Módulo_5.ipynb 
+```
+Para un correcto y óptimo análisis de los datos, localizamos y limpiamos aquella información que podría ser innecesaria o incluso que este perjudicando a nuestro dataset. En este paso eliminamos NA's y conservamos solo las columnas que necesitaremos, tras analizar el contenido de cada una.
 
 
 <a name="api"></a>
 ## ¿API?
 
+Este paso corresponde a
+```
+Spotipy-BEDUne-Right/Postworks/Postwork_5_Módulo_6.ipynb 
+```
+Según [redhat](https://www.redhat.com/es/topics/api/what-are-application-programming-interfaces) : Una API es un conjunto de definiciones y protocolos que se utiliza para desarrollar e integrar el software de las aplicaciones. API significa interfaz de programación de aplicaciones.
 
-Vestibulum sem est, congue id rutrum eu, ultricies et nisl. Sed vel tortor eget est lacinia tincidunt et nec odio. Sed egestas ligula a nulla malesuada, at egestas erat commodo. Integer eu augue a nibh iaculis lobortis accumsan non erat. Ut semper in enim sed fringilla. Sed dapibus posuere sapien dictum bibendum. Etiam vulputate urna ullamcorper quam tincidunt, at cursus tellus tristique. In vehicula quam eget velit condimentum gravida. 
+En esta sección del proyecto detallamos de forma puntual la extracción de datos desdde la API de Spotify (...) No podemos trabajar directamente con los datos en crudo, por lo que también abordaremos la limpieza e integración del dataset. Con el fin de comprobar que los datos están listos para la etapa de input, crearemos un "perfil de gustos" con los datos obtenidos en la parte final.
 
 <a name="spotipy"></a>
 ### Spotipy al rescate
+Para poder simplificarnos el proceso de las solicitudes GET a la API de Spotify, nos apoyaremos en Spotipy, una librería que sirve de interfaz para el API y asi, a todos los datos en la plataforma. Para instalarla usaremos el siguiente comando en los notebooks.
 ```
 !pip install spotipy
 ```
-Es una librería para la API Web de Spotify, con esta se obtiene acceso a todos los datos en la plataforma.
+
+<a name="geografia"></a>
+## Extra: La música y el mundo, o **un mapa vale más que mil palabras**
+Este paso extra esta alojado en la siguiente [liga](https://colab.research.google.com/drive/1YMSnIwXacq0136SFCc_3Wt1jWYubMSqu#scrollTo=2o3a8scm7keb)
+
+Ante la posiblidad de tener información o mejor dicho, de tener respuestas respecto al tipo de música que escuchamos y como se clasifican aquellas canciones en una playlist gracias al API de Spotify, es natural extender el alcance de estas respuestas y plantearnos preguntas acerca del mundo en el que coexistimos (...)
+
+
+<a name="geopandas"></a>
+### Geopandas
+
+Utilizaremos una librería para el análisis de datos geográficos y nos servirá bastante para visualizar las respuestas a nuestras inquietudes. Para instalarla necesitamos ejecutar:
+```
+!pip install --upgrade geopandas
+!pip install --upgrade pyshp
+!pip install --upgrade shapely
+!pip install --upgrade descartes
+```
+
 
 <a name="links"></a>
+
 ### Links
-
-
+Finalmente, algunos links que servirán al lector para ahondar mas en los temas tocados.
+[Spotify for Developers](https://developer.spotify.com/documentation/web-api/)
+[Spotipy](https://spotipy.readthedocs.io/en/2.17.1/)
+[geopandas](https://geopandas.org/)
 
 
