@@ -69,13 +69,13 @@ Spotipy-BEDUne-Right/Postworks/Postwork_5_Módulo_4.ipynb
 ```
 Aqui haremos uno de las partes cruciales de cualquier análisis de datos. La exploración. Por lo tanto, apoyados del poswork, nos enfocaremos en responder las siguientes preguntas.
 
--¿El conjunto de datos que tengo realmente me sirve para responder algunas de las preguntas que me planteé?
--¿Qué tamaño tiene mi conjunto de datos? ¿Serán datos suficientes?
--¿Qué columnas tengo y qué información tengo en cada una de esas columnas?
--Los nombres que tienen mis columnas, ¿son el nombre más apropiado?
--¿Qué tipos de datos tengo en cada columna? ¿Parecen ser el tipo correcto de datos? ¿O es un tipo de datos "incorrecto"?
--Si selecciono algunas filas al azar y las observo, ¿estoy obteniendo los datos que debería? ¿o hay datos que parecen estar "sucios" o "incorrectos"?
--Responde estas preguntas usando las técnicas que aprendiste en esta sesión y comparte tus hallazgos con tus compañeros y tu experto.
+- ¿El conjunto de datos que tengo realmente me sirve para responder algunas de las preguntas que me planteé?
+- ¿Qué tamaño tiene mi conjunto de datos? ¿Serán datos suficientes?
+- ¿Qué columnas tengo y qué información tengo en cada una de esas columnas?
+- Los nombres que tienen mis columnas, ¿son el nombre más apropiado?
+- ¿Qué tipos de datos tengo en cada columna? ¿Parecen ser el tipo correcto de datos? ¿O es un tipo de datos "incorrecto"?
+- Si selecciono algunas filas al azar y las observo, ¿estoy obteniendo los datos que debería? ¿o hay datos que parecen estar "sucios" o "incorrectos"?
+- Responde estas preguntas usando las técnicas que aprendiste en esta sesión y comparte tus hallazgos con tus compañeros y tu experto.
 
 
 
